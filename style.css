@@ -9,16 +9,6 @@
     width: 100%;
 }
 
-/* Eclipse =  Background-Color: #649549
-Buttons = #6CB840
-Texts = #EAAB1B(light orange)  and  #6CB840(light green)
-Hot Deals Section = background-color: #C9ECB5
-Contact = background-color: #FFD77C
-Footer : background-color: #C9ECB5
-Font type: Poppins  */
-
-
-
 :root{
     --color1:#649549; /*Eclipse =  Background-Color*/
     --color2:#6CB840;/* Buttons */
@@ -49,27 +39,27 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header .left_menu{
+header .l_menu{
     position: relative;
     display: flex;
 }
-header .left_menu li{
+header .l_menu li{
     list-style: none;
     
 }
-header .left_menu li a{
+header .l_menu li a{
     display: inline-block;
     margin-right: 40px;
     text-decoration: none;
 }
-header .right_menu{
+header .r_menu{
     position: relative;
     display: flex;
 }
-header .right_menu li{
+header .r_menu li{
     list-style: none;
 }
-header .right_menu li a{
+header .r_menu li a{
     display: inline-block;
     margin-left: 40px;
     text-decoration: none;
@@ -136,7 +126,7 @@ header .right_menu li a{
     background: var(--color1);
     clip-path: circle(60% at 80% -43%);
 }
-/* this section 2 */
+/*section 2 two*/
 #sec_two{
     position: relative;
     width: 100%;
@@ -174,7 +164,7 @@ header .right_menu li a{
     line-height: 1.4em;
     text-align: center;
 }
-/* section three */
+/* section 3 three */
 #sec_3{
     position: relative;
     width: 100%;
@@ -230,7 +220,7 @@ header .right_menu li a{
     height:120px;
 
 }
-/* section 4  hot deals section*/
+/*hot deals section*/
 
 .wrapper2{
     position: relative;
