@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+    body{
+    width: 100%;
+}
+
+/* Eclipse =  Background-Color: #649549
+Buttons = #6CB840
+Texts = #EAAB1B(light orange)  and  #6CB840(light green)
+Hot Deals Section = background-color: #C9ECB5
+Contact = background-color: #FFD77C
+Footer : background-color: #C9ECB5
+Font type: Poppins  */
+
+
+
+:root{
+    --color1:#649549; /*Eclipse =  Background-Color*/
+    --color2:#6CB840;/* Buttons */
+    --color3:#EAAB1B;/* Texts = #EAAB1B(light orange)  */ 
+    --color4:#6CB840; /* Texts color  #6CB840(light green) */
+    --color5:#C9ECB5; /* Hot Deals Section = background-color: #C9ECB5 */
+    --color6:#FFD77C; /* Contact = background-color: #FFD77C */
+    --color7:#C9ECB5;/* Footer : background-color: #C9ECB5*/
+    --color8:rgb(211, 211, 211);
+}
+#sec_one{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(192, 192, 192);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left_menu{
+    position: relative;
+    display: flex;
+}
+header .left_menu li{
+    list-style: none;
+    
+}
+header .left_menu li a{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+}
+header .right_menu{
+    position: relative;
+    display: flex;
+}
+header .right_menu li{
+    list-style: none;
+}
+header .right_menu li a{
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+	
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h1{
+    color: var(--color4);
+    font-size: 3em;
+    line-height: 1.4em;
+    padding-bottom: 10px;
+}
+.content .textbox h1 span{
+    color: var(--color3);
+}
+.content .textbox p{
+    padding-top: 5px;
+    line-height: 1.4em;
+}
+.content .textbox button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--color2);
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 100%;
+}
+.circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color1);
+    clip-path: circle(60% at 80% -43%);
+}
+/* this section 2 */
+#sec_two{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.content .imgBox2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.content .imgBox2 img{
+    width: 100%;
+}
+.content .textbox2{
+    position: relative;
+    width: 50%;
+}
+.content .textbox2 h1{
+    color: var(--color3);
+    font-size: 3em;
+    line-height: 1.4em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.content .textbox2 p{
+    padding-top: 5px;
+    line-height: 1.4em;
+    text-align: center;
+}
+/* section three */
+#sec_3{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.wrapper{
+    background: var(--color8);
+    margin-top: 5%;
+
+}
+.wrapper h1{
+    font-size: 2em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.wrapper h1 span{
+    color: var(--color4);
+}
+.menu{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+.menu .explore{
+    background: #fff;
+    margin: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 0 0 40px;
+    position: relative;
+}
+.menu .explore h3{
+    text-align: left;
+}
+.menu .explore p{
+    margin-left: 60px;
+    font-size: small;
+}
+.menu .explore .Burger_img{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    left: -55px;
+}
+.menu .explore .Burger_img img{
+    width: 150px;
+    height:120px;
+
+}
+/* section 4  hot deals section*/
+
+.wrapper2{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    padding-top: 0px;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--color5);
+    display: flex;
+
+}
+.team_member .row{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.team .team_member{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background: var(--color5);
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.special2{
+    margin-left: 30em;
+}
+
+#hot{
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 18em;
+}
+
+.team .team_member h2{
+   color:#6CB840;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+   font-size: 30px;
+}
+.team .team_member h2{
+   font-size: 26px;
+   margin: 20px 0;
+   
+}
+
+.team .team_member p{
+   text-align: center;
+   margin: 20px 0;
+}
+.team .team_member .burgerimg2{
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   bottom: -25px;
+   right: 67%;
+   
+}
+.team .team_member .burgerimg2 img{
+   width: 400px;
+   height: 300px;
+   padding-top: 20px;
+   margin-right: 50px;
+   padding-right: -50px;
+   padding-left: 0;
+   margin-left: 0;
+}
+
+/* contact */
+.sec_5{
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    background: var(--color6);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.wrappersec_5 h2{
+    font-size: 24px;
+}
+.wrappersec_5 h2 span{
+     color: var(--color4);
+}
+.wrappersec_5 p{
+    margin-bottom: 15px;
+}
+#email{
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+}
+
+#email::-webkit-input-placeholder{
+    padding-left: 1em;
+
+
+}
+
+.send{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--color2);
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* footer */
+
+footer{background: var(--color7);
+        padding: 40px;
+        margin-top: 40px;
+        width: 100%;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    display: space-between;
+
+}
+.footer-left{
+    display: flex;
+}
+
+.footer-right{
+    display: flex;
+}
+
+footer .footer-leftletf{
+    margin-top: 10px;
+    width: 100%;
+}
+footer .footer-leftletf p{
+    margin: 12px 12px;
+}
+.footer-leftletf{
+   padding-right: 20px;
+   border-right: 1px dashed green;
+}
+footer .footer-leftright{
+    padding-left: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+#phones{
+    margin-bottom: 5px;
+}
+
+
+.footer-right{
+    margin-left: 60%;
+}
+
+.footer-rightleft{
+    padding-left: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+.footer-rightright{
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.footer-rightleft h4{
+    font-size: 15px;
+}
+.footer-rightleft p{
+    font-size: 12px ;
+}
+
+.footer-rightright img{
+    padding-bottom: 20px;
+}
+.footer-rightright button{
+    background: var(--color4);
+    color: white;
+    border: none;
+    height: relative;
+    font-size: 12px;
+    width: 40px;
+}
